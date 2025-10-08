@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGO_URI, { serverSelectionTimeoutMS: 5000 })
 app.get("/", (req, res) => res.send("Backend OK"));
 
 // Contact form routes
-app.use("/api/contact", contactRoutes);
+app.use("/api/contact/submit", contactRoutes);
 
 // Start server
 const PORT = process.env.PORT || 5000;
