@@ -38,7 +38,7 @@ const Contact = () => {
 
     try {
       // Use environment variable or fallback to deployed backend
-      const apiBase = process.env.REACT_APP_API_URL || "https://your-backend.onrender.com";
+      const apiBase = process.env.REACT_APP_API_URL || "https://portfolio-backend-tskm.onrender.com";
 
       const response = await fetch(`${apiBase}/api/contact/submit`, {
         method: "POST",
