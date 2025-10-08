@@ -52,7 +52,7 @@ const Contact = () => {
       // - Otherwise use window.location.origin
       const envApi = process.env.REACT_APP_API_URL;
       let apiBase = envApi || window.location.origin;
-      if (!envApi && window.location.port === "3000") apiBase = "http://localhost:5000";
+      if (!envApi && window.location.port === "3000") apiBase = "https://my-portfolio-91sn.onrender.com";
 
       const response = await fetch(`${apiBase}/api/contact/submit`, {
         method: "POST",
